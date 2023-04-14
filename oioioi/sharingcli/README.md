@@ -8,7 +8,9 @@ Please note that [ki.staszic.waw.pl](http://ki.staszic.waw.pl) is not functionin
 
 ## Installation
 
-Add the module to `oioioi` directory, add `oioioi.sharingcli` to `INSTALLED_APPS`. Add `SHARING_SERVERS` variable to settings. Use the format:
+- Add the module to `oioioi` directory, add `oioioi.sharingcli` to `INSTALLED_APPS`. 
+- Add `'oioioi.sharingcli.problem_sources.RemoteSource'` to `PROBLEM_SOURCES`. 
+- Add`SHARING_SERVERS` variable to settings. Use the format:
 ```python
 SHARING_SERVERS = (
     ('site_url', 'sharing_url', 'client_id', 'client_secret'),
